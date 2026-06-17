@@ -7,7 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### [1.0.4] - 2026-06-17
 
 - fix(scan_against): replace inactivity timeout with absolute timeout #6
-- test: refactored against test-fixtures 1.7.0
+- fix(scan_against): defer (vs hang) when a clamd_socket host is unparseable
+- refactor(clamd_connect): parse via net_utils.endpoint
+- refactor(hook_data_post): extract per-host outcome into classify_outcome
+- refactor(hook_data_post): unbiased utils.shuffle for randomize_host_order
+- test: refactored against test-fixtures 1.7.0 #5
+- deps: bump versions
 
 ### [1.0.3] - 2026-05-24
 
@@ -39,3 +44,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.0.1]: https://github.com/haraka/haraka-plugin-clamd/releases/tag/v1.0.1
 [1.0.2]: https://github.com/haraka/haraka-plugin-clamd/releases/tag/v1.0.2
 [1.0.3]: https://github.com/haraka/haraka-plugin-clamd/releases/tag/v1.0.3
+[1.0.4]: https://github.com/haraka/haraka-plugin-clamd/releases/tag/v1.0.4
