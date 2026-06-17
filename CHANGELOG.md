@@ -4,6 +4,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.0.4] - 2026-06-17
+
+- fix(scan_against): replace inactivity timeout with absolute timeout #6
 - test: refactored against test-fixtures 1.7.0
 
 ### [1.0.3] - 2026-05-24
